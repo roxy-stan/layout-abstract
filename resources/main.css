@@ -57,13 +57,18 @@ html, body {
 }
 
 
+/* nu este ok pozitionarea asta. Era doar un element ce trebuia centrat in pagina. Eu il vad foarte in dreapta, ma indoiesc ca voiai asta */
 .container-wrapper {
-    position: absolute;
+    position: relative;
     width: 500px;
     height: 250px;
     border: 5px solid #fff;
-    bottom: 230px;
-    right: 430px;
+    /* bottom: 230px;
+    right: 430px; */
+    margin: 0 auto;
+    /* este foarte coborat din cauza imaginii cu puncte care are height de 270px aprox */
+    /* poti sa optezi sa il ridici dar cu un relative, nu cu un absolut */
+    top: -100px;
 }
 
 .horizontal-lines-container {
@@ -78,6 +83,7 @@ html, body {
 
 .title-abstract-container {
     width: 250px;
+    /* din nou, este doar un element ce il vrem centrat. Margin asa de mare si negativ nu ar trebui sa fie o solutie */
     margin: -180px auto 20px auto;
   }
 .title-abstract-container img {
