@@ -16,25 +16,29 @@ html, body {
     display: flex;  
     justify-content: space-between;
 }
-.title-abstract-top {
+.title-abstract-top, 
+.title-abstract-bottom {
     width: 400px;
 }
-.title-abstract-top img {
+.title-abstract-top img,
+.title-abstract-bottom img  {
     height: auto;
     width: 100%;
 }
 
-.points-right {
+.points-right, 
+.points-left  {
     width: 120px;
 }
-.points-right img {
+.points-right img, 
+.points-left img {
     height: auto;
     width: 100%;
 }
 
 
 
-.title-abstract-bottom {
+/* .title-abstract-bottom {
     position: absolute;
     width: 400px;
     bottom: 50px;
@@ -54,7 +58,7 @@ html, body {
 .points-left img {
     height: auto;
     width: 100%;
-}
+} */
 
 
 /* nu este ok pozitionarea asta. Era doar un element ce trebuia centrat in pagina. Eu il vad foarte in dreapta, ma indoiesc ca voiai asta */
@@ -123,4 +127,3 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-
