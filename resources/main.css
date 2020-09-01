@@ -11,25 +11,38 @@ html, body {
     position: relative;
 }
 
-.title-points-top {
-    padding: 50px 50px;
-    display: flex;  
-    justify-content: space-between;
-}
-.title-abstract-top, 
-.title-abstract-bottom {
+.title-abstract-top {
+    position: absolute;
     width: 400px;
-}
-.title-abstract-top img,
-.title-abstract-bottom img  {
-    height: auto;
-    width: 100%;
+    right: 50px;
+    top:50px;
+    left:50px;
+    bottom:  50px;
 }
 
-.points-right, 
+.title-abstract-bottom {
+    position: absolute;
+    width: 400px;
+    right: 50px;
+    bottom:  50px;
+}
+
+.points-right  {
+    width: 120px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
 .points-left  {
     width: 120px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
 }
+
+.title-abstract-top img,
+.title-abstract-bottom img,
 .points-right img, 
 .points-left img {
     height: auto;
@@ -38,62 +51,31 @@ html, body {
 
 
 
-/* .title-abstract-bottom {
-    position: absolute;
-    width: 400px;
-    bottom: 50px;
-    right: 50px;
-}
-.title-abstract-bottom img {
-    height: auto;
-    width: 100%;
-}
-
-.points-left {
-  position: absolute;
-  left: 50px;
-  bottom: 50px; 
-  width: 120px;
-}
-.points-left img {
-    height: auto;
-    width: 100%;
-} */
-
-
-/* nu este ok pozitionarea asta. Era doar un element ce trebuia centrat in pagina. Eu il vad foarte in dreapta, ma indoiesc ca voiai asta */
 .container-wrapper {
     position: relative;
-    width: 500px;
-    height: 250px;
     border: 5px solid #fff;
-    /* bottom: 230px;
-    right: 430px; */
+    height: 25%;
+    width: 30%;
+    top:35%;
     margin: 0 auto;
-    /* este foarte coborat din cauza imaginii cu puncte care are height de 270px aprox */
-    /* poti sa optezi sa il ridici dar cu un relative, nu cu un absolut */
-    top: -100px;
+    display: flex;
+    justify-content: center;
 }
 
+
 .horizontal-lines-container {
-    width: 15px;
-    margin: 110px auto auto 20px;
-  }
-.horizontal-lines-container img {
-      height: auto;
-      width: 100%;
-  }
+    position: absolute;
+    width: 10px;
+    left: 20px;
+    bottom:20px;
+}
 
 
 .title-abstract-container {
     width: 250px;
-    /* din nou, este doar un element ce il vrem centrat. Margin asa de mare si negativ nu ar trebui sa fie o solutie */
-    margin: -180px auto 20px auto;
-  }
-.title-abstract-container img {
-      height: auto;
-      width: 100%;
-  }
+    position: absolute;
+    top:10%;
+}
 
 
 .title-background-container {
@@ -102,20 +84,27 @@ html, body {
     right: 20px;
     top:20px;
   }
+
+
+.title-abstract-container img,
+.horizontal-lines-container img, 
 .title-background-container img {
       height: auto;
       width: 100%;
   }
 
 
-
 .separator{
+    position: absolute;
     width: 150px;
+    top:25%;
     margin: 30px auto;
     border-top: 1px solid #fff;
 }
 
 .text-container {
+    position: absolute;
+    bottom: 10%;
     width: 300px;
     margin: 10px auto 10px auto;
 }
